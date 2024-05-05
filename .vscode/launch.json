@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "RestaurantServiceApplication",
+            "request": "launch",
+            "mainClass": "com.test.RestaurantServiceApplication",
+            "projectName": "restaurant-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SwiggyServiceRegistryApplication<swiggy-service-registry>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.SwiggyServiceRegistryApplication",
+            "projectName": "swiggy-service-registry",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=44379 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=swiggy-service-registry"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SwiggyGatewayApplication<swiggy-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.SwiggyGatewayApplication",
+            "projectName": "swiggy-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=42925 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=swiggy-gateway"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SwiggyAppApplication<swiggy-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.SwiggyAppApplication",
+            "projectName": "swiggy-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=45879 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=swiggy-app"
+        }
+    ]
+}
